@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: digger run
-        uses: diggerhq/digger@v0.4.6
+        uses: diggerhq/digger@testing-with-gitroot
         with:
           setup-aws: false
           disable-locking: true
