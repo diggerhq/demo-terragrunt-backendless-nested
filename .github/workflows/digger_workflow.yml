@@ -23,7 +23,8 @@ jobs:
       - name: digger run
         uses: diggerhq/digger@v0.4.6
         with:
-          setup-aws: true
+          setup-aws: false
+          disable-locking: true
           setup-terragrunt: true
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
